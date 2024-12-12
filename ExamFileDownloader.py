@@ -4,7 +4,7 @@ import requests
 from concurrent.futures import ThreadPoolExecutor
 
 class ExamFileDownloader:
-    def __init__(self, csv_file, download_folder='downloaded_files', max_threads=5):
+    def __init__(self, csv_file, download_folder='downloaded_files', max_threads=30):
         """
         初始化下載器，設定 CSV 檔案路徑及下載資料夾。
         :param csv_file: str, CSV 檔案的路徑
